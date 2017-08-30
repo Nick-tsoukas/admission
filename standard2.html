@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admission Portfolio by Nick T</title>
+  <script src="https://use.fontawesome.com/6a27d3f950.js"></script>
+  <script src="scripts/main.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Montserrat|Roboto|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/standard.css">
+</head>
+
+<body class="container">
+  <header>
+    <h4 class="name">Nikolaos Tsoukas</h4>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="standard1.html">Standard 1</a>
+      <a href="standard2.html">Standard 2</a>
+      <a href="standard3.html">Standard 3</a>
+    </div>
+    <svg class="accent" height="10px" width="100px">
+          <line x1="0" x2="30" style="stroke:rgb(255,0,0);stroke-width 1" />
+        </svg>
+  </header>
+  <div class="agenda" id="mainIntro">
+    <h4>Standard 2 </h4>
+    <svg class="accent" height="10px" width="100px">
+        <line x1="0" x2="30" style="stroke:rgb(255,0,0);stroke-width 1" />
+      </svg>
+    <h4>Solve a Project Euler Problem</h4>
+    <p class="intro">Project Euler Problem 3</p>
+    <p>What is the largest prime factor of the number 600851475143?</p>
+    <p>I thought this problem was really challenging, and I had a great time coming up with a solution! I took a granular approach, so the first thing I did was explore what a prime number is. I did some research on primality testing and stayed focused on
+      prime numbers.
+    </p>
+    <p>Then, I sought to write a javascript function that could determine if a number was prime or composite. When I succeeded in my endeavor, I then built a web page and incorporated the javascript into an HTML form(just for fun).</p>
+
+    <p>Having the logic for primality testing, I thought the hard part was over. The next logical step was to write a script that would collect all the factors of a number. Using the modulus operator, this was simple enough. Ultimately, the script would
+      collect all the prime factors of a number and then return the largest prime factor. I tested the script on the first test case of the project Euler problem and it was successful. The test case was: The prime factors of 13195 are 5, 7, 13 and 29.
+      I proceeded to do that thing people do when the Denver Broncos score, and then took a break! When I came back to run the script to find the answer to the problem with the number 600851475143, it crashed.</p>
+    <p> The algorithm was not efficient. It was not possible to iterate through a number that large. I was stuck and had to chew on this problem deeper. I removed myself from the text editor, stepped away from writing scripts, did some more research on primality
+      testing, and got a good night's sleep. Came back to it the next morning and created a solution that did not require iterating through the entire number. Learning that there could not be a prime factor greater than the square root of the number in
+      question, I was able to create a solution that did not require iterating through the entire number. With that knowledge, I was able to create a much more efficient script and produce the answer to the problem.</p>
+    <p>
+      Fun Stuff!
+
+    </p>
+
+  </div>
+
+  <div class="primeNumberForm">
+    <h4>What is the largest Prime Factor</h4>
+    <p>Enter a number to find it's largest prime factor</p>
+
+    <input id="numb">
+
+    <button type="button" onclick="largestPrimeFactor()">Submit</button>
+
+    <p id="results"></p>
+
+  </div>
+
+  <div class="wrapper">
+    <div class="a">
+      <h4><a class="noStyleLink" href="standard1.html">Standard One</a></h4>
+      <svg class="accent" height="10px" width="100px">
+            <line x1="0" x2="30" style="stroke:rgb(255,0,0);stroke-width 1" />
+          </svg>
+      <p>Demonstrate an active interest in coding</p>
+    </div>
+    <div class="b">
+      <h4><a class="noStyleLink" href="standard2.html">Standard Two</a></h4>
+      <svg class="accent" height="10px" width="100px">
+            <line x1="0" x2="30" style="stroke:rgb(255,0,0);stroke-width 1" />
+          </svg>
+      <p>Demonstrate Problem Solving Skills</p>
+    </div>
+    <div class="c">
+      <h4><a class="noStyleLink" href="standard3.html">Standard Three</a></h4>
+      <svg class="accent" height="10px" width="100px">
+            <line x1="0" x2="30" style="stroke:rgb(255,0,0);stroke-width 1" />
+          </svg>
+      <p>Demonstrate the desire to create things</p>
+    </div>
+    <div class="box d">
+      <a href="standard1.html">
+        <img src="images/code.jpg" alt="">
+      </a>
+    </div>
+    <div class="box e">
+      <a href="standard2.html">
+        <img src="images/problem_board.jpg" alt="">
+      </a>
+    </div>
+    <div class="box f">
+      <a href="standard3.html">
+        <img src="images/create.jpg" alt="">
+      </a>
+    </div>
+  </div>
+  <footer>
+    <a href="https://github.com/Nick-tsoukas?tab=repositories">
+    <i class="fa fa-github noStyleLink" aria-hidden="true"></i>
+    </a>
+  </footer>
+</body>
+
+</html>
